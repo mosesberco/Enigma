@@ -11,14 +11,17 @@ class Substitutor(ABC):
 
     @staticmethod
     def ch2i(ch: str) -> int:
+        """ Char to index """
         return ord(ch) - A_ORD
 
     @staticmethod
     def i2ch(i: int) -> str:
+        """ Index to char """
         return chr((i % MOD) + A_ORD)
 
     @staticmethod
     def rot(i: int, shift: int) -> int:
+        """ Rotate """
         return (i + shift) % MOD
 
     @abstractmethod
