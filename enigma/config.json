@@ -1,0 +1,9 @@
+{
+  "rotors": [
+    {"name": "I",   "wiring": "EKMFLGDQVZNTOWYHXUSPAIBRCJ", "notch": "Q", "ring": 0, "offset": 0},
+    {"name": "II",  "wiring": "AJDKSIRUXBLHWTMCQGZNPYFVOE", "notch": "E", "ring": 0, "offset": 0},
+    {"name": "III", "wiring": "BDFHJLCPRTXVZNYEIWGAKMUSQO", "notch": "V", "ring": 0, "offset": 0}
+  ],
+  "reflector": {"name": "B", "wiring": "YRUHQSLDPXNGOKMIEBFZCWVJAT"},
+  "plugboard": [["R", "Y"], ["B", "U"],["A","S"],["F","Z"]]
+}
