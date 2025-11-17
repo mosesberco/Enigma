@@ -35,9 +35,9 @@ def main():
     encoded = machine.encode_message(msg)
     print("Encoded:", encoded)
 
-    # machine2 = load_machine_from_config(args.config)
-    # decoded = machine2.encode_message(encoded)
-    # print("Decoded:", decoded)
+    machine2 = load_machine_from_config(args.config)
+    decoded = machine2.encode_message(encoded)
+    print("Decoded:", decoded)
 
 if __name__ == "__main__":
     main()
