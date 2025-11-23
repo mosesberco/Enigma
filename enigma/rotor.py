@@ -21,12 +21,14 @@ class Rotor(Translator):
         shifted = (i + self.offset - self.ring_setting) % MOD
         j = self.forward_tbl[shifted]
         result = (j - self.offset + self.ring_setting) % MOD
-        self.log.debug(f"{self.__class__.__name__}.forward: {i}->{result} (shifted={shifted})")
+        idx_to_letter = lambda x: chr(x + 65)
+        self.log.debug(f"{self.__class__.__name__}.forward: {i}->{result} (letter {idx_to_letter(j)}) (shifted={shifted})")
         return result
 
     def reverse(self, i: int) -> int:
         shifted = (i + self.offset - self.ring_setting) % MOD
         j = self.reverse_tbl[shifted]
         result = (j - self.offset + self.ring_setting) % MOD
-        self.log.debug(f"{self.__class__.__name__}.reverse: {i}->{result} (shifted={shifted})")
+        idx_to_letter = lambda x: chr(x + 65)
+        self.log.debug(f"{self.__class__.__name__}.reverse: {i}->{result} (letter {idx_to_letter(j)}) (shifted={shifted})")
         return result
